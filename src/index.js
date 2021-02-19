@@ -9,12 +9,12 @@ module.exports = function towelSort (matrix) {
         k =  matrix[i];
         if(i%2==0){
         for(let j = 0; j<k.length; j++){
-            arr1.push(parseInt(matrix[i][j]));
+            arr1.push(matrix[i][j]);
         }
       }
         else{
           for(let j = k.length-1; j>=0; j--){
-            arr1.push(parseInt(matrix[i][j]));
+            arr1.push(matrix[i][j]);
         }
     }
   }
